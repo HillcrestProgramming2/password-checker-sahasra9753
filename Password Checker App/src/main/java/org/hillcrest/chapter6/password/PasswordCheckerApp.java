@@ -8,7 +8,18 @@ public class PasswordCheckerApp {
         System.out.println("Enter a password: ");
         String password = scanner.nextLine();
 
-        System.out.println("Password Strength: " + );
+        
+        System.out.println("Password Strength: " + strength + " (" + score + "/5)");
+
+        if (!feedback.isEmpty()) {
+            System.out.println("Suggestions to improve your password:");
+            System.out.print(feedback);
+        }
+
+        scanner.close();
+    }
+}
+
    
 
     }
